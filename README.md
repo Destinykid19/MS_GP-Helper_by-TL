@@ -7,4 +7,6 @@ enter the data and click search
 
 NOTE: Your Windows defender or Anti-Viruses might flag this programm. You'll need to whitelist main.py. It's open source so you can and should check the code before starting it.
 
+Updates: I'll try to add functions like taking the daily surveys, solving the puzzles etc.
+
 Have fun :)
