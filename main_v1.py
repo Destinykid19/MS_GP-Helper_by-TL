@@ -97,16 +97,18 @@ def search_function(self, delay):
     rng_string = lower_L + upper_L + num + sign
     length = 16
     search_num = int(self.input_num.get())
-    #path = "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+    path = "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+    webbrowser.register("edge",None, webbrowser.BackgroundBrowser(path))
     options = webdriver.FirefoxOptions()
     # options.add_argument("-headless")
-    driver = webdriver.Edge(options=options)
+    #driver = webdriver.Edge(options=options)
 
     if self.input_num.get() == "":
         messagebox.showinfo(title="Message", message="Please enter a Number of searches! ")
     else:
-        webbrowser.open_new("https://www.bing.com")
-        driver.switch_to.new_window('tab')
+        webbrowser.get("edge").open_new("https://www.bing.com")
+        #webbrowser.open_new("https://www.bing.com")
+        #driver.switch_to.new_window('tab')
         # driver.get("https://www.bing.com")
         # driver.maximize_window()
         time.sleep(2)
