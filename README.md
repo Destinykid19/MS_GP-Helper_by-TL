@@ -1,8 +1,8 @@
 # MS_GP-Helper_by-TL
 Automated random searches with GUI to help you with your Microsoft Rewards daily searches.
-Download the folder
-Unpack it
-Start main.py
+Download the folder,
+Unpack it,
+Start main.py,
 enter the data and click search
 
 It's set to open the Edge browser, make sure you are logged in on your browser to get the points.
